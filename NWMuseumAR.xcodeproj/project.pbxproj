@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BCEA5B2049FAAB00708EE2 /* NWMuseumARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCEA5A2049FAAB00708EE2 /* NWMuseumARUITests.swift */; };
+		02BCEA632049FBAC00708EE2 /* XCUIApplication+Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCEA622049FBAC00708EE2 /* XCUIApplication+Onboarding.swift */; };
+		44430D8CAA387F56E486A460 /* Pods_NWMuseumAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCCFF4855AE209B0DF2CE63 /* Pods_NWMuseumAR.framework */; };
+		840ADCCC202418D4004313A8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 840ADCCB202418D4004313A8 /* .gitkeep */; };
+		840ADCCE202418F3004313A8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 840ADCCD202418F3004313A8 /* .gitkeep */; };
+		840ADCD020241904004313A8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 840ADCCF20241904004313A8 /* .gitkeep */; };
+		84402601202270B200AF5839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84402600202270B200AF5839 /* AppDelegate.swift */; };
+		84402603202270B200AF5839 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 84402602202270B200AF5839 /* art.scnassets */; };
+		84402605202270B200AF5839 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84402604202270B200AF5839 /* ARViewController.swift */; };
+		8440260A202270B200AF5839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84402609202270B200AF5839 /* Assets.xcassets */; };
+		8440260D202270B200AF5839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440260B202270B200AF5839 /* LaunchScreen.storyboard */; };
+		8461B1F1202E2CFB00733885 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461B1F0202E2CFB00733885 /* TutorialPageViewController.swift */; };
+		8461B1F5202E30C700733885 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461B1F4202E30C700733885 /* MainPageViewController.swift */; };
+		8461B1F7202E31F100733885 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461B1F6202E31F100733885 /* ProgressViewController.swift */; };
+		8489A84520362D4400243C26 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8489A84420362D4400243C26 /* Tutorial.storyboard */; };
+		8489A84720362D5F00243C26 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8489A84620362D5F00243C26 /* Progress.storyboard */; };
+		8489A84920362D7400243C26 /* ARScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8489A84820362D7400243C26 /* ARScene.storyboard */; };
+		8489A84C2036308300243C26 /* EndTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489A84B2036308300243C26 /* EndTutorialViewController.swift */; };
+		D985EF352036CD110072B377 /* Artifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985EF342036CD110072B377 /* Artifact.swift */; };
+		D985EF372036D2B00072B377 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985EF362036D2B00072B377 /* ProgressCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02BCEA5D2049FAAB00708EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844025F5202270B200AF5839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844025FC202270B200AF5839;
+			remoteInfo = NWMuseumAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02BCEA582049FAAB00708EE2 /* NWMuseumARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NWMuseumARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02BCEA5A2049FAAB00708EE2 /* NWMuseumARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWMuseumARUITests.swift; sourceTree = "<group>"; };
+		02BCEA5C2049FAAB00708EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02BCEA622049FBAC00708EE2 /* XCUIApplication+Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Onboarding.swift"; sourceTree = "<group>"; };
+		4184AB7EBD446A16478DA598 /* Pods-NWMuseumAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWMuseumAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-NWMuseumAR/Pods-NWMuseumAR.release.xcconfig"; sourceTree = "<group>"; };
+		840ADCCB202418D4004313A8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		840ADCCD202418F3004313A8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		840ADCCF20241904004313A8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		844025FD202270B200AF5839 /* NWMuseumAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NWMuseumAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84402600202270B200AF5839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84402602202270B200AF5839 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		84402604202270B200AF5839 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		84402609202270B200AF5839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8440260C202270B200AF5839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8440260E202270B200AF5839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8461B1F0202E2CFB00733885 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		8461B1F4202E30C700733885 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		8461B1F6202E31F100733885 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		8489A84420362D4400243C26 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		8489A84620362D5F00243C26 /* Progress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
+		8489A84820362D7400243C26 /* ARScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ARScene.storyboard; sourceTree = "<group>"; };
+		8489A84B2036308300243C26 /* EndTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTutorialViewController.swift; sourceTree = "<group>"; };
+		BBBE01153F70E483ABFCA655 /* Pods-NWMuseumAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWMuseumAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NWMuseumAR/Pods-NWMuseumAR.debug.xcconfig"; sourceTree = "<group>"; };
+		CCCCFF4855AE209B0DF2CE63 /* Pods_NWMuseumAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWMuseumAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D985EF342036CD110072B377 /* Artifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artifact.swift; sourceTree = "<group>"; };
+		D985EF362036D2B00072B377 /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02BCEA552049FAAB00708EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844025FA202270B200AF5839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44430D8CAA387F56E486A460 /* Pods_NWMuseumAR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026ACEBEC1F8A8ED2A5FE637 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBBE01153F70E483ABFCA655 /* Pods-NWMuseumAR.debug.xcconfig */,
+				4184AB7EBD446A16478DA598 /* Pods-NWMuseumAR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		02BCEA592049FAAB00708EE2 /* NWMuseumARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02BCEA5A2049FAAB00708EE2 /* NWMuseumARUITests.swift */,
+				02BCEA5C2049FAAB00708EE2 /* Info.plist */,
+				02BCEA622049FBAC00708EE2 /* XCUIApplication+Onboarding.swift */,
+			);
+			path = NWMuseumARUITests;
+			sourceTree = "<group>";
+		};
+		844025F4202270B200AF5839 = {
+			isa = PBXGroup;
+			children = (
+				844025FF202270B200AF5839 /* NWMuseumAR */,
+				02BCEA592049FAAB00708EE2 /* NWMuseumARUITests */,
+				844025FE202270B200AF5839 /* Products */,
+				026ACEBEC1F8A8ED2A5FE637 /* Pods */,
+				F3FFC83AFF7BF4C90D43A0FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		844025FE202270B200AF5839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844025FD202270B200AF5839 /* NWMuseumAR.app */,
+				02BCEA582049FAAB00708EE2 /* NWMuseumARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844025FF202270B200AF5839 /* NWMuseumAR */ = {
+			isa = PBXGroup;
+			children = (
+				844026162022710900AF5839 /* Models */,
+				844026182022711B00AF5839 /* Controllers */,
+				844026172022711300AF5839 /* Views */,
+				844026192022712000AF5839 /* Libs */,
+				8440261A2022712600AF5839 /* Scripts */,
+				84402602202270B200AF5839 /* art.scnassets */,
+				84402609202270B200AF5839 /* Assets.xcassets */,
+				8440260E202270B200AF5839 /* Info.plist */,
+			);
+			path = NWMuseumAR;
+			sourceTree = "<group>";
+		};
+		844026162022710900AF5839 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840ADCCB202418D4004313A8 /* .gitkeep */,
+				D985EF342036CD110072B377 /* Artifact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		844026172022711300AF5839 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8489A84820362D7400243C26 /* ARScene.storyboard */,
+				8489A84620362D5F00243C26 /* Progress.storyboard */,
+				8489A84420362D4400243C26 /* Tutorial.storyboard */,
+				8440260B202270B200AF5839 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		844026182022711B00AF5839 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84402600202270B200AF5839 /* AppDelegate.swift */,
+				8461B1F0202E2CFB00733885 /* TutorialPageViewController.swift */,
+				8461B1F4202E30C700733885 /* MainPageViewController.swift */,
+				8489A84E2036346F00243C26 /* Progress */,
+				8489A84D2036345900243C26 /* AR */,
+				8489A84A2036306000243C26 /* Tutorial */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		844026192022712000AF5839 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				840ADCCD202418F3004313A8 /* .gitkeep */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		8440261A2022712600AF5839 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				840ADCCF20241904004313A8 /* .gitkeep */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		8489A84A2036306000243C26 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				8489A84B2036308300243C26 /* EndTutorialViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		8489A84D2036345900243C26 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				84402604202270B200AF5839 /* ARViewController.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		8489A84E2036346F00243C26 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				8461B1F6202E31F100733885 /* ProgressViewController.swift */,
+				D985EF362036D2B00072B377 /* ProgressCell.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		F3FFC83AFF7BF4C90D43A0FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCFF4855AE209B0DF2CE63 /* Pods_NWMuseumAR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02BCEA572049FAAB00708EE2 /* NWMuseumARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02BCEA612049FAAB00708EE2 /* Build configuration list for PBXNativeTarget "NWMuseumARUITests" */;
+			buildPhases = (
+				02BCEA542049FAAB00708EE2 /* Sources */,
+				02BCEA552049FAAB00708EE2 /* Frameworks */,
+				02BCEA562049FAAB00708EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02BCEA5E2049FAAB00708EE2 /* PBXTargetDependency */,
+			);
+			name = NWMuseumARUITests;
+			productName = NWMuseumARUITests;
+			productReference = 02BCEA582049FAAB00708EE2 /* NWMuseumARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		844025FC202270B200AF5839 /* NWMuseumAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84402611202270B200AF5839 /* Build configuration list for PBXNativeTarget "NWMuseumAR" */;
+			buildPhases = (
+				85A32E4ACF4255E4AFC57C4E /* [CP] Check Pods Manifest.lock */,
+				844025F9202270B200AF5839 /* Sources */,
+				844025FA202270B200AF5839 /* Frameworks */,
+				844025FB202270B200AF5839 /* Resources */,
+				1585A0536385A0EA612E6DD7 /* [CP] Embed Pods Frameworks */,
+				580F0AA9EFC02DC50C9ADD71 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWMuseumAR;
+			productName = NWMuseumAR;
+			productReference = 844025FD202270B200AF5839 /* NWMuseumAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844025F5202270B200AF5839 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					0,
+				);
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = NWMuseumAR;
+				TargetAttributes = {
+					02BCEA572049FAAB00708EE2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 844025FC202270B200AF5839;
+					};
+					844025FC202270B200AF5839 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 844025F8202270B200AF5839 /* Build configuration list for PBXProject "NWMuseumAR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 844025F4202270B200AF5839;
+			productRefGroup = 844025FE202270B200AF5839 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844025FC202270B200AF5839 /* NWMuseumAR */,
+				02BCEA572049FAAB00708EE2 /* NWMuseumARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02BCEA562049FAAB00708EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844025FB202270B200AF5839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84402603202270B200AF5839 /* art.scnassets in Resources */,
+				8440260D202270B200AF5839 /* LaunchScreen.storyboard in Resources */,
+				8489A84920362D7400243C26 /* ARScene.storyboard in Resources */,
+				840ADCCC202418D4004313A8 /* .gitkeep in Resources */,
+				840ADCCE202418F3004313A8 /* .gitkeep in Resources */,
+				8440260A202270B200AF5839 /* Assets.xcassets in Resources */,
+				8489A84720362D5F00243C26 /* Progress.storyboard in Resources */,
+				8489A84520362D4400243C26 /* Tutorial.storyboard in Resources */,
+				840ADCD020241904004313A8 /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1585A0536385A0EA612E6DD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NWMuseumAR/Pods-NWMuseumAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NWMuseumAR/Pods-NWMuseumAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		580F0AA9EFC02DC50C9ADD71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NWMuseumAR/Pods-NWMuseumAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85A32E4ACF4255E4AFC57C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NWMuseumAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02BCEA542049FAAB00708EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02BCEA632049FBAC00708EE2 /* XCUIApplication+Onboarding.swift in Sources */,
+				02BCEA5B2049FAAB00708EE2 /* NWMuseumARUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844025F9202270B200AF5839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8489A84C2036308300243C26 /* EndTutorialViewController.swift in Sources */,
+				8461B1F7202E31F100733885 /* ProgressViewController.swift in Sources */,
+				D985EF372036D2B00072B377 /* ProgressCell.swift in Sources */,
+				8461B1F5202E30C700733885 /* MainPageViewController.swift in Sources */,
+				84402605202270B200AF5839 /* ARViewController.swift in Sources */,
+				84402601202270B200AF5839 /* AppDelegate.swift in Sources */,
+				8461B1F1202E2CFB00733885 /* TutorialPageViewController.swift in Sources */,
+				D985EF352036CD110072B377 /* Artifact.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02BCEA5E2049FAAB00708EE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844025FC202270B200AF5839 /* NWMuseumAR */;
+			targetProxy = 02BCEA5D2049FAAB00708EE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8440260B202270B200AF5839 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8440260C202270B200AF5839 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02BCEA5F2049FAAB00708EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFJ2V6K9E9;
+				INFOPLIST_FILE = NWMuseumARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bcit.NWMuseumARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NWMuseumAR;
+			};
+			name = Debug;
+		};
+		02BCEA602049FAAB00708EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFJ2V6K9E9;
+				INFOPLIST_FILE = NWMuseumARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bcit.NWMuseumARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NWMuseumAR;
+			};
+			name = Release;
+		};
+		8440260F202270B200AF5839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84402610202270B200AF5839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84402612202270B200AF5839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBE01153F70E483ABFCA655 /* Pods-NWMuseumAR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
+				INFOPLIST_FILE = NWMuseumAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.NWMuseumAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84402613202270B200AF5839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4184AB7EBD446A16478DA598 /* Pods-NWMuseumAR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
+				INFOPLIST_FILE = NWMuseumAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.NWMuseumAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02BCEA612049FAAB00708EE2 /* Build configuration list for PBXNativeTarget "NWMuseumARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02BCEA5F2049FAAB00708EE2 /* Debug */,
+				02BCEA602049FAAB00708EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844025F8202270B200AF5839 /* Build configuration list for PBXProject "NWMuseumAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8440260F202270B200AF5839 /* Debug */,
+				84402610202270B200AF5839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84402611202270B200AF5839 /* Build configuration list for PBXNativeTarget "NWMuseumAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84402612202270B200AF5839 /* Debug */,
+				84402613202270B200AF5839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 844025F5202270B200AF5839 /* Project object */;
+}
