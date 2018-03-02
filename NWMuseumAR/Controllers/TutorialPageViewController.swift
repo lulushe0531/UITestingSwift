@@ -23,6 +23,7 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // adding identifier for this view
         view.accessibilityIdentifier = "onboardingView"
 
         self.delegate = self

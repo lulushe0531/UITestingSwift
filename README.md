@@ -1,31 +1,68 @@
-# NWMuseumAR
-iOS AR application for the New Westminster museum.
+## NWMuseumARUITests.swift
 
-![](header.jpg)
+    import XCTest
 
-## Design
-Our inital design for the application looks like this:
+    class NWMuseumARUITests: XCTestCase {
+        var app: XCUIApplication!
 
-![](Outline.jpg)
+        override func setUp() {
+            super.setUp()
 
-Let's use this as our starting point, although it's obviously subject to change.
+            // Put setup code here. This method is called before the invocation of each test method in the class.
 
-## Installation
+            // In UI tests it is usually best to stop immediately when a failure occurs.
+            continueAfterFailure = false
+            // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
+            app = XCUIApplication()
 
-No installation necasary. We have included all the Pod files so you DO NOT have to install anything.
+            // We send a command line argument to our app,
+            // to enable it to reset its state
+            app.launchArguments.append("--uitesting")
+    }
 
-## Contributing
+        func testGoingThroughOnboarding() {
+            app.launch()
 
-### Gitflow
+            // Make sure we're displaying onboarding
+            XCTAssertTrue(app.isDisplayingOnboarding)
 
-1. Fork it (<https://github.com/NewWestMuseumAR/NWMuseumAR/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Update CHANGELOG.md
-5. Push to the branch (`git push origin feature/fooBar`)
-6. Create a new Pull Request
+            // Swipe left three times to go through the pages
+            app.swipeLeft()
+            app.swipeLeft()
 
-## Format
-CHANGELOG format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+            // Tap the "Done" button
+            app.buttons["Start app"].tap()
 
-## Happy Coding!
+            // Onboarding should no longer be displayed
+            XCTAssertFalse(app.isDisplayingOnboarding)
+            }
+    }
+
+## XCUIApplication+Onboarding.swift
+    import XCTest
+
+    extension XCUIApplication {
+        var isDisplayingOnboarding: Bool {
+        return otherElements["onboardingView"].exists
+        }
+    }
+  
+## TutorialPageViewController.swift
+      // adding identifier for this view in viewDidLoad(), line 26
+      view.accessibilityIdentifier = "onboardingView"
+
+## AppDelegate.swift
+    // add in didFinishLaunchingWithOptions, line 20
+    // command line argument to indicate uitesting is going to run
+    if CommandLine.arguments.contains("--uitesting") {
+        resetState()
+    }
+    
+    // add at the end of AppDelegate class, out of class scope
+    // to reset before uitesting run
+    private extension AppDelegate {
+        func resetState() {
+        let defaultsName = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: defaultsName)
+        }
+    }

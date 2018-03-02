@@ -42,6 +42,4 @@ class NWMuseumARUITests: XCTestCase {
         // Onboarding should no longer be displayed
         XCTAssertFalse(app.isDisplayingOnboarding)
     }
-    
-    
 }
